@@ -11,16 +11,6 @@ $(document).ready(function() {
         }
     });
 //---------End of collapsible animation----------
-//---------Json feed----------
-    $.getJSON("http://arcowebdesign.com/wp-json/wp/v2/posts/801" , function(data) {
-        console.log(data.title.rendered);
-        $("#MAddress").html(data.title.rendered);
-    });
-    $.getJSON("http://arcowebdesign.com/wp-json/wp/v2/posts/801" , function(data) {
-        console.log(data.title.rendered);
-        $("#MAddress").append(data.content.rendered);
-    });
 
-//---------End of Json feed----------
 
 });
