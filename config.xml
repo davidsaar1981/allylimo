@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "org.allylimoapp.App"
+        versionCode="10" 
+        version   = "1.0.3">
+
+    <!-- versionCode is optional and Android only -->
+    
+    <!-- define which version of phonegap to use, not required -->
+    <preference name="phonegap-version" value="cli-6.3.0" />
+	
+	<gap:platform name="android" />
+	<preference name="orientation" value="portrait"/>
+	<preference name="fullscreen" value="true"/>
+	<preference name="KeepRunning" value="false"/>
+	<preference name="android-minSdkVersion" value="17"/>
+	
+	<!-- the default icon to be use, for BlackBerry must be less than 16kb -->
+	<icon src="allylimo-icon.png" />
+
+	<!-- the default splash screen to use -->
+	<!-- iOS -->
+	<gap:splash src="allylimo.png" width="320" height="480" />
+	<gap:splash src="allylimo.png" width="640" height="960" />
+	<gap:splash src="allylimo.png" width="1024" height="768" />
+	<gap:splash src="allylimo.png" width="768" height="1024" />
+	<!-- Android -->
+	<gap:splash src="allylimo.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="allylimo.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="allylimo.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="allylimo.png" gap:platform="android" gap:density="xhdpi" />
+	<!-- BlackBerry -->
+	<gap:splash src="allylimo.png" gap:platform="blackberry" />
+	<!-- Windows Phone -->
+	<gap:splash src="allylimo.png" gap:platform="winphone" />
+
+<access origin="*"/>
+  <plugin name="cordova-plugin-whitelist" version="1"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+
+    <name>Ally Limo</name>
+
+    <description>
+        Phone Application for Ally Limo - 30262 Crown Valley Pkwy Ste B190 Laguna Niguel, CA 92677. 
+    </description>
+
+    <author href="http://arcowebdesign.com/" email="info@arcowebdesign.com">
+        Arco Baleno 
+    </author>
+
+</widget>
